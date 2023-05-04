@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>상품 페이지</h1>
+    <form>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label>주문자 이름 <input type="text"/></label>
+                </li>
+                <li>
+                    <label>전화번호</label> <input type="text" placeholder="번호만 입력"/></label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br/>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label>배송옵션</label>
+                    <label><input type="radio" name="location" value="기존배송지"/> 기존배송지</label> 
+                    <label><input type="radio" name="location" value="새배송지"/> 새배송지</label> 
+                </li>
+                <li>
+    
+                </li>
+                <li>
+                    <label>
+                        요청사항 
+                        <select id="class">                      
+                            <option selected>요청사항을 선택하세요.</option>    
+                            <option>요청사항을 선택하세요.</option>           
+                        </select>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>   
+    </form>
+    <br/>
+    <form>
+        <fieldset>
+            <legend>상품 정보</legend>
+            <div>
+                상품
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox"> 
+                    방울토마토 1kg
+                    <del> 10000원</del>
+                    <b> 8,000원</b>
+                    <input type="text"> 
+                    박스
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox"> 
+                    방울토마토 2kg
+                    <del> 20,000원</del>
+                    <b> 16,000</b>
+                    <input type="text"> 
+                    박스
+                </label>
+                
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox"> 
+                    방울토마토 3kg
+                    <del> 30,000원</del>
+                    <b> 24,000</b>
+                    <input type="text"> 
+                    박스
+                </label>
+                
+            </div>
+            <div>
+                기타 사항
+                <textarea></textarea>
+            </div>
+        </fieldset>
+    </form>
+    <br/>
+    <form>
+        <fieldset>
+            <legend>결제 수단</legend>
+            <ul>
+                <li>
+                    <label><input type="radio" name="cash" value="좌"/> 계좌이체</label> 
+                </li>
+                <li>
+                    <label><input type="radio" name="cash" value="돈"/> 카드 결제</label> 
+                </li>
+                <li>
+                    <label><input type="radio" name="cash"/> 일반 결제</label> 
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br/>
+    <form>
+        <label>
+            <input type="submit" value="초기화"/>
+            <input type="submit" value="결제하기"/>
+        </label>
+    </form>
+</body>
+</html>
